@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locale App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">
+        <a href="#">Locale App</a>
+      </div>
+      <div class="auth-links">
+        <a href="#" id="register-link">Register</a>
+        <a href="#" id="login-link">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="data-section">
+      <h2>Regions</h2>
+      <div id="regions"></div>
+      <h2>States</h2>
+      <div id="states"></div>
+      <h2>LGAs</h2>
+      <div id="lgas"></div>
+    </section>
+
+    <section id="auth-section" class="hidden">
+      <div id="register-form" class="auth-form">
+        <h3>Register</h3>
+        <input type="email" id="register-email" placeholder="Email" required>
+        <input type="password" id="register-password" placeholder="Password" required>
+        <button id="register-btn">Register</button>
+      </div>
+      <div id="login-form" class="auth-form">
+        <h3>Login</h3>
+        <input type="email" id="login-email" placeholder="Email" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button id="login-btn">Login</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
